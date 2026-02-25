@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "vd-games"
+version = "0.1.0"
+description = "Проект для практической работы №1"
+dependencies = [
+    "prompt>=0.4.1",
+]
+
+[project.scripts]
+vd-game = "vd_games.scripts.VD_main:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["vd_games"]
+
