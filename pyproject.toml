@@ -12,7 +12,13 @@ dependencies = [
 
 [project.scripts]
 vd-game = "vd_games.scripts.VD_main:main"
+vd-even = "vd_games.scripts.VD_even:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["vd_games"]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.15.2",
+]
 

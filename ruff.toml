@@ -1,0 +1,23 @@
+target-version = "py312"
+line-length = 79
+
+[lint]
+select = [
+    "F",
+    "E",
+    "W",
+    "C",
+    "B",
+]
+ignore = [
+    "E501",
+]
+
+exclude = [
+    ".git",
+    "__pycache__",
+    "dist",
+    "build",
+    "venv",
+    ".venv",
+]
