@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "vd-games"
 version = "0.1.0"
-description = "Проект для практической работы №1"
+description = "Проект для практической работы %1"
 dependencies = [
     "prompt>=0.4.1",
 ]
@@ -14,6 +14,8 @@ dependencies = [
 vd-game = "vd_games.scripts.VD_main:main"
 vd-even = "vd_games.scripts.VD_even:main"
 vd-gcd = "vd_games.scripts.VD_gcd:main"
+vd-progression = "vd_games.scripts.VD_progression:main"
+vd-prime = "vd_games.scripts.VD_prime:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["vd_games"]
@@ -22,4 +24,3 @@ packages = ["vd_games"]
 dev = [
     "ruff>=0.15.2",
 ]
-
